@@ -11,6 +11,9 @@ export default {
     return {
       message: 'Title character block'
     }
+  },
+  created () {
+    this.$emit('initialized')
   }
 }
 </script>

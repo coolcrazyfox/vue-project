@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>VUE.JS App</h2>
-    <character-block/>
+    <character-block @initialized="handler"/>
     <ul>
       <li>
         <a
@@ -31,6 +31,11 @@ export default {
   name: 'rick-and-morty-list',
   components: {
     CharacterBlock
+  },
+  methods: {
+    handler () {
+      console.log('in handler')
+    }
   },
   data () {
     return {
