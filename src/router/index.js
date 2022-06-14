@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Rick from '@/components/RickAndMortyList'
+import RickAndMortyCharacter from '../components/RickAndMortyCharacter'
+import RickAndMortyList from '../components/RickAndMortyList'
 
 Vue.use(Router)
 
@@ -9,7 +10,12 @@ export default new Router({
     {
       path: '/',
       name: 'rick-and-morty-list',
-      component: Rick
+      component: RickAndMortyList
+    },
+    {
+      path: '/character',
+      name: 'rick-and-morty-character',
+      component: RickAndMortyCharacter
     }
   ]
 })

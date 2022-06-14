@@ -2,13 +2,14 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>VUE.JS App</h2>
+    <character-block/>
     <ul>
       <li>
         <a
           href="https://vuejs.org"
           target="_blank"
         >
-          About
+          Home
         </a>
       </li>
       <li>
@@ -24,8 +25,13 @@
 </template>
 
 <script>
+import CharacterBlock from './CharacterBlock'
+
 export default {
   name: 'rick-and-morty-list',
+  components: {
+    CharacterBlock
+  },
   data () {
     return {
       msg: 'Rick and Morty'
@@ -39,14 +45,17 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }
