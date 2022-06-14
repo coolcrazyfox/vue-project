@@ -32,10 +32,8 @@ export default {
   components: {
     CharacterBlock
   },
-  methods: {
-    handler () {
-      console.log('in handler')
-    }
+  created () {
+    this.$store.dispatch('fetchCharacters', 1)
   },
   data () {
     return {
