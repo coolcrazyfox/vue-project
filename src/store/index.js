@@ -31,7 +31,10 @@ export default new Vuex.Store({
   },
   getters: {
     getCharacterById: (state) => ({id, page}) => {
-      return state.characters[page].find(character => character.id === id)
+      const pageCharacters = state.characters[page]
+      if (pageCharacters) {
+        return pageCharacters.find(character => character.id === id)
+      } return null
     },
   },
   // modules: {}
