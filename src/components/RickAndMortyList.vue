@@ -1,33 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+<!--    <h1>{{ msg }}</h1>-->
     <h2>VUE.JS App</h2>
-    <character-block
-      v-for="character in characters"
-      :key="character.id"
-      :character="character"
-    />
+    <character-block v-for="character in characters"  :key="character.id"  :character="character" />
 <!--    v-for === map-->
 <!--    {{ firstCharacter }}-->
-
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          About
-        </a>
-      </li>
-    </ul>
   </div>
 </template>
 

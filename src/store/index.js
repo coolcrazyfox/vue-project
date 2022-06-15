@@ -39,7 +39,7 @@ export default new Vuex.Store({
     getCharactersByPage: (state) => (page) => {
       const pageCharacters = state.characters[page]
       return pageCharacters
-    },
-  },
+    }
+  }
   // modules: {}
 })

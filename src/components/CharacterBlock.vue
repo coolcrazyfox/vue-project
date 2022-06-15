@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <img :src="character.image" alt=""/>
+      <img :src="character.image" :alt="character.name"/>
     </div>
     <div>
       <span>
@@ -15,7 +15,7 @@
       </span>
     </div>
 
-    <!--    {{ message }}-->
+        {{ message }}
   </div>
 </template>
 <script>
@@ -24,13 +24,32 @@ export default {
   props: {
     character: {
       type: Object,
-      require: true,
+      required: true
     }
-  }
+  },
   data () {
     return {
-      // message: 'Title character block'
+      message: 'Title character block'
     }
   }
 }
 </script>
+<style scoped>
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+span {
+  color: #42b983;
+}
+</style>
