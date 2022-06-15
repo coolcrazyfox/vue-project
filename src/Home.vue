@@ -8,7 +8,8 @@
 <script>
 import RickAndMortyList from './components/RickAndMortyList'
 import RickAndMortyCharacter from './components/RickAndMortyCharacter'
-export default{
+
+export default {
   name: 'home',
   components: {RickAndMortyCharacter, RickAndMortyList}
 }
