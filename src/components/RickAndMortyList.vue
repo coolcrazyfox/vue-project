@@ -2,7 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>VUE.JS App</h2>
-    <character-block @initialized="handler"/>
+    <character-block/>
+    {{ firstCharacter }}
+
     <ul>
       <li>
         <a
@@ -38,6 +40,14 @@ export default {
   data () {
     return {
       msg: 'Rick and Morty'
+    }
+  },
+  computed: {
+    characters () {
+      return this.$store.state.characters
+    },
+    firstCharacter () {
+      return this.$store.getters['getCharacterById']({id: 1, page: 1})
     }
   }
 }

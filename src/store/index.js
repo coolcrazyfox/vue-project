@@ -28,6 +28,11 @@ export default new Vuex.Store({
         })
         .catch(err => console.log(err))
     }
-  }
+  },
+  getters: {
+    getCharacterById: (state) => ({id, page}) => {
+      return state.characters[page].find(character => character.id === id)
+    },
+  },
   // modules: {}
 })
