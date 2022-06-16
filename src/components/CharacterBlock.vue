@@ -1,6 +1,6 @@
 <template>
   <div class="character-block">
-    <div>
+    <div class="character-block__image">
       <img :src="character.image" :alt="character.name"/>
     </div>
     <div>
