@@ -3,7 +3,7 @@
     <div class="character-block__image">
       <img :src="character.image" :alt="character.name"/>
     </div>
-    <div>
+    <div class="character-block__info">
       <span>
         {{character.name}}
       </span>
@@ -32,22 +32,19 @@ export default {
   // }
 }
 </script>
-<!--<style scoped>-->
-<!--h1, h2 {-->
-<!--  font-weight: normal;-->
-<!--}-->
-
-<!--ul {-->
-<!--  list-style-type: none;-->
-<!--  padding: 0;-->
-<!--}-->
-
-<!--li {-->
-<!--  display: inline-block;-->
-<!--  margin: 0 10px;-->
-<!--}-->
-
-<!--span {-->
-<!--  color: #42b983;-->
-<!--}-->
-<!--</style>-->
+<style scoped>
+.character-block {
+  display: flex;
+  flex-direction: row;
+  width: 24%;
+  margin: 20px;
+}
+.character-block__image{
+   width: 250px;
+   height: auto;
+ }
+.character-block__info{
+   display: flex;
+   flex-direction: column;
+ }
+</style>

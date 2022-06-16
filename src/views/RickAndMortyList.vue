@@ -1,9 +1,11 @@
 <template>
   <div class="home">
 <!--        <h1>{{ msg }}</h1>-->
-    <h2>VUE.JS App</h2>
-    <character-block v-for="character in characters"  :key="character.id"  :character="character" />
-    <!--    v-for === map-->
+    VUE.JS App
+    <div class="characters-list">
+      <character-block v-for="character in characters"  :key="character.id"  :character="character" />
+      <!--    v-for === map-->
+    </div>
     <!--    {{ firstCharacter }}-->
   </div>
 </template>
