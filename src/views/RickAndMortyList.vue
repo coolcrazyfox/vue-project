@@ -3,6 +3,7 @@
 <!--        <h1>{{ msg }}</h1>-->
     VUE.JS App
     <div class="characters-list">
+<!--      <CharacterBlock />-->
       <character-block v-for="character in characters"  :key="character.id"  :character="character" />
       <!--    v-for === map-->
     </div>

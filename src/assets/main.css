@@ -1,0 +1,31 @@
+.characters-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.character-block {
+  display: flex;
+  flex-direction: row;
+  width: 24%;
+  margin: 20px;
+}
+
+.character-block__image {
+  width: 250px;
+  height: auto;
+  margin-right: 25px;
+}
+
+.character-block__info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.character-block__info span{
+  margin:5px 5px 10px;
+  padding-left: 20px;
+}
+
+

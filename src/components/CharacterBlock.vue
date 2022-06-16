@@ -32,25 +32,25 @@ export default {
   // }
 }
 </script>
-<style scoped>
-.character-block {
-  display: flex;
-  flex-direction: row;
-  width: 24%;
-  margin: 20px;
-  border: 1px solid red;
-  background: black;
-}
-.character-block__image{
-   width: 250px;
-   height: auto;
-  border: 1px solid #ffcc00;
-  background: #0c6b6b;
- }
-.character-block__info{
-   display: flex;
-   flex-direction: column;
-  border: 1px solid #0033ff;
-  background: #859887;
- }
-</style>
+<!--<style scoped>-->
+<!--.character-block {-->
+<!--  display: flex;-->
+<!--  flex-direction: row;-->
+<!--  width: 24%;-->
+<!--  margin: 20px;-->
+<!--  border: 1px solid red;-->
+<!--  background: black;-->
+<!--}-->
+<!--.character-block__image{-->
+<!--   width: 250px;-->
+<!--   height: auto;-->
+<!--  border: 1px solid #ffcc00;-->
+<!--  background: #0c6b6b;-->
+<!-- }-->
+<!--.character-block__info{-->
+<!--   display: flex;-->
+<!--   flex-direction: column;-->
+<!--  border: 1px solid #0033ff;-->
+<!--  background: #859887;-->
+<!-- }-->
+<!--</style>-->
