@@ -20,7 +20,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ebedf1;
   margin-top: 60px;
+  background: #111010;
+  border:2px solid #9f9672;
 }
 </style>
