@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import RickAndMortyCharacter from '../components/RickAndMortyCharacter'
-import RickAndMortyList from '../components/RickAndMortyList'
-import About from '../About'
-import Home from '../Home'
+import RickAndMortyCharacter from '../views/RickAndMortyCharacter'
+import About from '../views/About'
+import RickAndMortyList from '../views/RickAndMortyList'
+import process from 'shelljs'
 
 Vue.use(VueRouter)
 const routes = [
@@ -21,13 +21,9 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
-  },
-  {
-    path: '/home',
-    name: 'About',
-    component: Home
   }
 ]
+process.env.BASE_URL = undefined
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,

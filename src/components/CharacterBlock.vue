@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="character-block">
     <div>
       <img :src="character.image" :alt="character.name"/>
     </div>
@@ -14,8 +14,6 @@
         Last know location: {{character.location.name}}
       </span>
     </div>
-
-        {{ message }}
   </div>
 </template>
 <script>
@@ -26,30 +24,30 @@ export default {
       type: Object,
       required: true
     }
-  },
-  data () {
-    return {
-      message: 'Title character block'
-    }
   }
+  // data () {
+  //   return {
+  //     message: 'Title character block'
+  //   }
+  // }
 }
 </script>
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+<!--<style scoped>-->
+<!--h1, h2 {-->
+<!--  font-weight: normal;-->
+<!--}-->
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+<!--ul {-->
+<!--  list-style-type: none;-->
+<!--  padding: 0;-->
+<!--}-->
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+<!--li {-->
+<!--  display: inline-block;-->
+<!--  margin: 0 10px;-->
+<!--}-->
 
-span {
-  color: #42b983;
-}
-</style>
+<!--span {-->
+<!--  color: #42b983;-->
+<!--}-->
+<!--</style>-->
