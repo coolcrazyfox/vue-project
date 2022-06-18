@@ -41,9 +41,9 @@ export default {
       msg: 'Rick and Morty'
     }
   },
-  created () {
-    this.$store.dispatch('fetchCharacters', this.currentPage)
-  },
+  // created () {
+  //   this.$store.dispatch('fetchCharacters', this.currentPage)
+  // },
   computed: {
     characters () {
       return this.$store.getters['getCharactersByPage'](this.currentPage)
@@ -59,7 +59,9 @@ export default {
     currentPage: {
       handler (page) {
         this.$store.dispatch('fetchCharacters', page)
-      }
+      },
+      immediate: true
+      // comment created ()
     }
   },
   methods: {
