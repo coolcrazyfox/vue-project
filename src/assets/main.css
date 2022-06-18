@@ -8,24 +8,23 @@
 .character-block {
   display: flex;
   flex-direction: row;
-  width: 24%;
-  margin: 20px;
+  width: 22%;
+  margin: 10px;
 }
 
-.character-block__image {
-  width: 250px;
+.character-block, .character-block__image img{
+  width: 160px;
   height: auto;
-  margin-right: 25px;
 }
 
-.character-block__info {
+.character-block,  .character-block__info {
   display: flex;
   flex-direction: column;
   font-size: 14px;
 }
-.character-block__info span{
-  margin:5px 5px 10px;
-  padding-left: 20px;
+.character-block,  .character-block__info span{
+  margin: 5px;
+
 }
 
 
