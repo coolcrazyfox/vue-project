@@ -4,14 +4,14 @@
       <img :src="character.image" :alt="character.name"/>
     </div>
     <div class="character-block__info">
-      <span>
-        {{character.name}}
+      <span @click="detailedInfo">
+        {{ character.name }}
       </span>
       <span>
-        {{character.status}} - {{character.species}}
+        {{ character.status }} - {{ character.species }}
       </span>
       <span>
-        Last know location: {{character.location.name}}
+        Last know location: {{ character.location.name }}
       </span>
     </div>
   </div>
@@ -23,6 +23,11 @@ export default {
     character: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    detailedInfo () {
+      this.$router.push({name: 'CharacterDetails', params: {id: this.character.id}})
     }
   }
   // data () {

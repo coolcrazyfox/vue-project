@@ -20,9 +20,9 @@ export default new Vuex.Store({
   },
   actions: {
     fetchCharacters ({state, commit}, page) {
-      const pageCharaters = state.characters[page]
-      if (pageCharaters) {
-        return Promise.resolve(pageCharaters)
+      const pageCharacters = state.characters[page]
+      if (pageCharacters) {
+        return Promise.resolve(pageCharacters)
       }
       return axiosInstance.get(CHARACTERS_BY_PAGE(page))
         .then(({data}) => {
