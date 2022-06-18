@@ -32,10 +32,11 @@ export default new Vuex.Store({
         })
         .catch(err => console.log(err))
     },
-    fetchSingleCharacter( _ , id) {
-      return axiosInstance.get(CHARACTERS_BY_ID(id).then(res=>{
-        console.log(res)
-      })
+    fetchSingleCharacter (_, id) {
+      return axiosInstance.get(CHARACTERS_BY_ID(id))
+        .then(res => {
+          console.log(res)
+        })
         .catch(err => console.log(err))
     }
   },
@@ -44,7 +45,8 @@ export default new Vuex.Store({
       const pageCharacters = state.characters[page]
       if (pageCharacters) {
         return pageCharacters.find(character => character.id === id)
-      } return null
+      }
+      return null
     },
     getCharactersByPage: (state) => (page) => {
       const pageCharacters = state.characters[page]

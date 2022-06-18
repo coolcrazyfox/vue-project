@@ -7,13 +7,22 @@
 
 <script>
 import CharacterBlock from './../components/CharacterBlock'
+
 export default {
   name: 'rick-and-morty-character',
   components: {
     CharacterBlock
   },
-  created () {
-    this.$router.pa
+  data () {
+    return {
+      character: null
+    }
+  },
+  async created () {
+    const {id} = this.$route.params
+    if (id) {
+      this.character = await this.$store.dispatch('fetchSingleCharacter', id)
+    }
   },
   methods: {
     goBack () {
