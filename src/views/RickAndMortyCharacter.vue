@@ -1,13 +1,25 @@
 <template>
   <div>
-    one character
+    <CharacterBlock :character="character"/>
+    <button @click="goBack">Back</button>
   </div>
 </template>
 
 <script>
+import CharacterBlock from './../components/CharacterBlock'
 export default {
-  name: 'rick-and-morty-character'
-
+  name: 'rick-and-morty-character',
+  components: {
+    CharacterBlock
+  },
+  created () {
+    this.$router.pa
+  },
+  methods: {
+    goBack () {
+      this.$router.push({name: 'RickAndMortyList'})
+    }
+  }
 }
 </script>
 
