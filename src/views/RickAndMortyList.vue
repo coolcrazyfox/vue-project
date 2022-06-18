@@ -55,6 +55,13 @@ export default {
       return this.$store.state.pages
     }
   },
+  watch: {
+    currentPage: {
+      handler (page) {
+        this.$store.dispatch('fetchCharacters', page)
+      }
+    }
+  },
   methods: {
     clickCallback (pageNum) {
       console.log(pageNum)
