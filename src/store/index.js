@@ -34,10 +34,6 @@ export default new Vuex.Store({
     },
     fetchSingleCharacter (_, id) {
       return axiosInstance.get(CHARACTERS_BY_ID(id))
-        .then(res => {
-          console.log(res)
-        })
-        .catch(err => console.log(err))
     }
   },
   getters: {

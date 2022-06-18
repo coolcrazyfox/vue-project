@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CharacterBlock :character="character"/>
+    <CharacterBlock v-if="character" :character="character"/>
     <button @click="goBack">Back</button>
   </div>
 </template>
@@ -19,9 +19,13 @@ export default {
     }
   },
   async created () {
-    const {id} = this.$route.params
-    if (id) {
-      this.character = await this.$store.dispatch('fetchSingleCharacter', id)
+    try {
+      const {id} = this.$route.params
+      if (id) {
+        this.character = await this.$store.dispatch('fetchSingleCharacter', id)
+      }
+    } catch (err) {
+      console.log(err)
     }
   },
   methods: {
