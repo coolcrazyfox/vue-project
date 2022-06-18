@@ -4,21 +4,36 @@
     VUE.JS App
     <div class="characters-list">
       <CharacterBlock
-        v-for="character in characters"  :key="character.id"  :character="character"
+        v-for="character in characters"
+        :key="character.id"
+        :character="character"
       />
       <!--    v-for === map-->
     </div>
+    <paginate
+      v-model="page"
+      :page-count="20"
+      :page-range="3"
+      :margin-pages="2"
+      :click-handler="clickCallback"
+      :prev-text="'Prev'"
+      :next-text="'Next'"
+      :container-class="'pagination'"
+      :page-class="'page-item'">
+    </paginate>
     <!--    {{ firstCharacter }}-->
   </div>
 </template>
 
 <script>
 import CharacterBlock from './../components/CharacterBlock'
+import Paginate from 'vuejs-paginate'
 
 export default {
   name: 'rick-and-morty-list',
   components: {
-    CharacterBlock
+    CharacterBlock,
+    Paginate
   },
   data () {
     return {
@@ -35,7 +50,8 @@ export default {
     },
     firstCharacter () {
       return this.$store.getters['getCharacterById']({id: 1, page: 1})
-    }
+    },
+    pages(){}
   }
 }
 </script>
