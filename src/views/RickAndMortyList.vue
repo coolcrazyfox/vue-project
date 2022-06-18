@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-<!--        <h1>{{ msg }}</h1>-->
+    <!--        <h1>{{ msg }}</h1>-->
     VUE.JS App
     <div class="characters-list">
       <CharacterBlock
@@ -11,8 +11,8 @@
       <!--    v-for === map-->
     </div>
     <paginate
-      v-model="page"
-      :page-count="20"
+      v-model="currentPage"
+      :page-count="pages"
       :page-range="3"
       :margin-pages="2"
       :click-handler="clickCallback"
@@ -51,7 +51,14 @@ export default {
     firstCharacter () {
       return this.$store.getters['getCharacterById']({id: 1, page: 1})
     },
-    pages(){}
+    pages () {
+      return this.$store.state.pages
+    }
+  },
+  methods: {
+    clickCallback (pageNum) {
+      console.log(pageNum)
+    }
   }
 }
 </script>
