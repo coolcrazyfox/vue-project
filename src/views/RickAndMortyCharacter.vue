@@ -2,6 +2,7 @@
   <div>
     <CharacterBlock v-if="character" :character="character"/>
     <button @click="goBack">Back</button>
+    <button @click="goBack">Back</button>
   </div>
 </template>
 
