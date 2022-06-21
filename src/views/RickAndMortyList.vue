@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!--        <h1>{{ msg }}</h1>-->
-    VUE.JS App
+    The Rick and Morty API    VUE.JS App
     <div class="characters-list">
       <CharacterBlock
         v-for="character in characters"

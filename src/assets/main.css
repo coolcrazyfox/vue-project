@@ -1,3 +1,6 @@
+.home{
+  background: #1f1b1b;
+}
 .characters-list {
   display: flex;
   flex-direction: row;
@@ -33,6 +36,7 @@
 .character-name-info:hover{
   cursor: pointer;
   font-size: 21px;
+  color: #ffcc00;
 }
 .characters-btn{
   background: #19b27b;
