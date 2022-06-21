@@ -16,6 +16,12 @@
       <span class="character-location-name-info">
          {{ character.location.name }}
       </span>
+      <span>
+        First seen in:
+      </span>
+      <span class="character-location-name-info">
+         {{ episode.name }}
+      </span>
     </div>
   </div>
 </template>
@@ -24,6 +30,10 @@ export default {
   name: 'character-block',
   props: {
     character: {
+      type: Object,
+      required: true
+    },
+    episode: {
       type: Object,
       required: true
     }
