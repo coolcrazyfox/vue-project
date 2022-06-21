@@ -42,6 +42,10 @@
   cursor: pointer;
   color: #ffae00;
 }
+.character-name-span{
+  color: #9f9fc4;
+  font-size: 14px;
+}
 .characters-btn{
   background: #19b27b;
   border-radius: 5px ;

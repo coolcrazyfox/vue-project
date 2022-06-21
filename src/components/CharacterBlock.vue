@@ -10,17 +10,11 @@
       <span>
         {{ character.status }} - {{ character.species }}
       </span>
-      <span>
+      <span class="character-name-span">
         Last know location:
       </span>
       <span class="character-location-name-info">
          {{ character.location.name }}
-      </span>
-      <span>
-        First seen in:
-      </span>
-      <span class="character-location-name-info">
-         {{ episode.name }}
       </span>
     </div>
   </div>
@@ -30,10 +24,6 @@ export default {
   name: 'character-block',
   props: {
     character: {
-      type: Object,
-      required: true
-    },
-    episode: {
       type: Object,
       required: true
     }
