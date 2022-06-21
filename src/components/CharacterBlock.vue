@@ -4,7 +4,7 @@
       <img :src="character.image" :alt="character.name"/>
     </div>
     <div class="character-block__info">
-      <span @click="detailedInfo">
+      <span @click="detailedInfo" class="character-name-info">
         {{ character.name }}
       </span>
       <span>

@@ -26,19 +26,27 @@
   margin: 5px;
 
 }
+.character-name-info{
+  color: #19b27b;
+  font-size: 20px;
+}
+.character-name-info:hover{
+  cursor: pointer;
+  font-size: 21px;
+}
 .characters-btn{
   background: #19b27b;
   border-radius: 5px ;
   width:120px;
   padding: 4px;
   margin: 10px;
-
 }
 .characters-btn:hover{
   cursor: pointer;
   width:130px;
   height: 29px;
   margin-bottom: 8px;
-
+  background: darkgray;
+  color: #01573a;
 }
 
