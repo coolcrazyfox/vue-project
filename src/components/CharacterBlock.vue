@@ -11,7 +11,10 @@
         {{ character.status }} - {{ character.species }}
       </span>
       <span>
-        Last know location: {{ character.location.name }}
+        Last know location:
+      </span>
+      <span class="character-location-name-info">
+         {{ character.location.name }}
       </span>
     </div>
   </div>

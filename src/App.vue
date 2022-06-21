@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-<!--    <div id="nav">-->
+    <div id="nav">
 <!--      <router-link to="/home">Home</router-link>-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--    </div>-->
+      <router-link to="/about">About</router-link>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -21,8 +21,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ebedf1;
-  margin-top: 60px;
-  background: #111010;
-  border:2px solid #9f9672;
+  /*margin-top: 60px;*/
+  height: 100vh;
+  background:  #1f1b1b;
+  border:2px solid #9f729d;
 }
 </style>

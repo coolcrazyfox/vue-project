@@ -11,13 +11,15 @@
 .character-block {
   display: flex;
   flex-direction: row;
-  width: 22%;
-  margin: 10px;
+  width: 24%;
+  margin: 15px;
+  background: #403f50;
 }
 
 .character-block, .character-block__image img{
-  width: 160px;
+  width: 200px;
   height: auto;
+  border-radius: 5px;
 }
 
 .character-block,  .character-block__info {
@@ -27,16 +29,18 @@
 }
 .character-block,  .character-block__info span{
   margin: 5px;
-
+  /*color: #57566c;*/
 }
-.character-name-info{
+.character-name-info {
   color: #19b27b;
   font-size: 20px;
 }
-.character-name-info:hover{
+.character-location-name-info{
+  color: #19b27b;
+}
+.character-name-info:hover, .character-location-name-info:hover{
   cursor: pointer;
-  font-size: 21px;
-  color: #ffcc00;
+  color: #ffae00;
 }
 .characters-btn{
   background: #19b27b;
@@ -53,4 +57,5 @@
   background: darkgray;
   color: #01573a;
 }
+
 
