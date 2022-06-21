@@ -47,9 +47,13 @@
   font-size: 14px;
 }
 .characters-btn{
+  display: flex;
+  justify-content: center;
+  position: relative;
   background: #19b27b;
   border-radius: 5px ;
   width:120px;
+  left: 2%;
   padding: 4px;
   margin: 10px;
 }
