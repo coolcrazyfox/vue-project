@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import RickAndMortyCharacter from '../views/RickAndMortyCharacter'
-import About from '../views/About'
+// import About from '../views/About'
 import RickAndMortyList from '../views/RickAndMortyList'
 import process from 'shelljs'
 
@@ -16,11 +16,6 @@ const routes = [
     path: '/character/:id',
     name: 'CharacterDetails',
     component: RickAndMortyCharacter
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
   }
 ]
 process.env.BASE_URL = undefined
