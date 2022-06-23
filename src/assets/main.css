@@ -56,6 +56,7 @@
   left: 2%;
   padding: 4px;
   margin: 10px;
+  box-shadow: 0 3px 10px rgb(143, 33, 49), inset 0 1px 0 rgba(255, 255, 255, 0.42);
 }
 .characters-btn:hover{
   cursor: pointer;
