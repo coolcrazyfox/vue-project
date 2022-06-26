@@ -10,6 +10,7 @@
       />
       <!--    v-for === map-->
     </div>
+    <button>LOADING...</button>
     <paginate
       v-model="currentPage"
       :page-count="pages"
